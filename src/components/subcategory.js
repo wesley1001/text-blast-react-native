@@ -401,7 +401,8 @@ class SubCategory extends Component {
       price: Math.floor(price * 100),
       desc: 'blast of ' + self.state.size + ' mms messages',
       platform: Platform.OS,
-      transactionId: order.transactionId
+      transactionId: order.transactionId,
+      receipt: order.receipt
     }, self.state)
 
     params.toNumber = self._sanitizeNumber(params.toNumber)

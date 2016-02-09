@@ -28,10 +28,18 @@ var storekit = module.exports = {
       .then(() => {
         return new Promise((resolve, reject) => {
           InAppUtils.purchaseProduct(productId, (err, response) => {
-            if (response && response.productIdentifier) {
-              return resolve({
-                transactionId: response.transactionIdentifier,
-                productId: response.productIdentifier
+            if (!err && response && response.productIdentifier) {
+              InAppUtils.receiptData((err, receipt) => {
+                if (!err && receipt) {
+                  return resolve({
+                    transactionId: response.transactionIdentifier,
+                    productId: response.productIdentifier,
+                    receipt: receipt
+                  })
+                } else {
+                  console.log('storekit error retrieving receipt for purchase', response, productId, err)
+                  return reject(err || 'payment receipt error')
+                }
               })
             } else {
               console.log('storekit error purchasing product', productId, err)
