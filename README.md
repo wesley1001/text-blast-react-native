@@ -6,9 +6,9 @@ This project is a cross-platform mobile app allowing users to blast their friend
 
 ### Structure
 
-This is a react-native mobile client that talks to a nodejs [backend](https://github.com/SeshApp/blast).
+This is a react-native mobile client that talks to a nodejs [backend](https://github.com/SeshApp/text-blast).
 
-*There is an analogous [ionic mobile client](https://github.com/SeshApp/blast-ionic) for directly comparing Ionic and React Native on a simple, real-world app.*
+*There is an analogous [ionic mobile client](https://github.com/SeshApp/text-blast-ionic) for directly comparing Ionic and React Native on a simple, real-world app.*
 
 ### Todo
 
