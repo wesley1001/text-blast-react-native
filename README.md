@@ -12,13 +12,14 @@ This is a react-native mobile client that talks to a nodejs [backend](https://gi
 
 ### Todo
 
-* v2
-  * add category search
-  * fix category-list issue where loading and isRefreshing can both be true
-  * cache categories and top-level images in-app
-  * https://github.com/akiran/react-slick
-  * lightbox message previews (react-native-lightbox)
-  * fix some of the quirks with giftedform
+* push notifications to notify sender of each message sent
+* orders section which lists past orders and their status
+* add category search
+* fix category-list issue where loading and isRefreshing can both be true
+* cache categories and top-level images in-app
+* https://github.com/akiran/react-slick
+* lightbox message previews (react-native-lightbox)
+* fix some of the quirks with giftedform
 
 ### Inspiration
 
