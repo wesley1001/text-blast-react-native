@@ -12,6 +12,7 @@ This is a react-native mobile client that talks to a nodejs [backend](https://gi
 
 ### Todo
 
+* order processing screen
 * push notifications to notify sender of each message sent
 * orders section which lists past orders and their status
 

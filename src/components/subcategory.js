@@ -11,18 +11,17 @@ var {
   Platform,
   StyleSheet,
   ScrollView,
-  Text,
   View,
 } = React
 
 var ProgressImage = require('react-native-image-progress');
 var Progress = require('react-native-progress/Pie')
-var ContactPicker = require('./contact-picker')
 
 var { GiftedForm, GiftedFormManager } = require('react-native-gifted-form')
 var validator = require('validator')
 
-const SEAPI = require('../services/api')
+var ContactPicker = require('./contact-picker')
+var OrderService = require('../services/order')
 var StoreKit = require('../services/storekit')
 
 var config = {
@@ -413,14 +412,7 @@ class SubCategory extends Component {
 
     if (order.toName) params.toName = order.toName
 
-    return fetch(SEAPI + '/orders', {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(params)
-    }).then(checkResponseStatus)
+    return OrderService.create(params)
       .then(() => {
         Alert.alert('Success', 'Order placed successfully!')
 
@@ -460,18 +452,6 @@ class SubCategory extends Component {
     } else {
       return ''
     }
-  }
-}
-
-function checkResponseStatus (response) {
-  console.log('response', response)
-
-  if (response.status >= 200 && response.status < 300) {
-    return response
-  } else {
-    let error = new Error(response.statusText)
-    error.response = response
-    throw error
   }
 }
 

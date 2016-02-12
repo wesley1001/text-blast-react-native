@@ -17,6 +17,7 @@ var {
 var Mailer = require('NativeModules').RNMail
 
 var Gallery = require('./gallery')
+var Orders = require('./orders')
 var FAQ = require('./faq')
 var Legal = require('./legal')
 
@@ -29,6 +30,14 @@ class SideMenu extends Component {
         }}>
           <View>
             <Text style={styles.rowText}>Home</Text>
+          </View>
+        </TouchableHighlight>
+
+        <TouchableHighlight underlayColor='royalblue' style={styles.row} onPress={() => {
+          this._onMenuItemPressed({ title: 'Orders', component: Orders })
+        }}>
+          <View>
+            <Text style={styles.rowText}>Orders</Text>
           </View>
         </TouchableHighlight>
 
