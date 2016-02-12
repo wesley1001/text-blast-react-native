@@ -54,7 +54,7 @@ class Order extends Component {
         </View>
 
         <View style={{ flexDirection: 'row', justifyContent: 'flex-start', flex: 1, backgroundColor: 'transparent', margin: 10, }}>
-          <Text style={styles.orderText}>Recipient: { order.toNumber }</Text>
+          <Text style={styles.orderText}>Recipient: { order.toNumber + (order.toName ? ' (' + order.toName + ')' : '') }</Text>
         </View>
 
         <View style={{ flexDirection: 'row', justifyContent: 'flex-start', flex: 1, backgroundColor: 'transparent', margin: 10, }}>

@@ -19,6 +19,7 @@ var {
 var Icon = require('react-native-vector-icons/FontAwesome')
 var Emoji = require('react-native-emoji')
 var dateFormat = require('dateformat')
+var Device = require('react-native-device')
 
 var Order = require('./order')
 var OrderService = require('../services/order')
@@ -157,7 +158,7 @@ class Orders extends Component {
 
     self.setState({ isRefreshing: true })
 
-    return OrderService.find({ offset: 0, limit: 100, user: "test" })
+    return OrderService.find({ offset: 0, limit: 100, user: Device.identifierForVendor })
       .then(function (orders) {
         console.log('orders', orders)
         self._orders = orders

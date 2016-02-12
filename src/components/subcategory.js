@@ -16,6 +16,7 @@ var {
 
 var ProgressImage = require('react-native-image-progress');
 var Progress = require('react-native-progress/Pie')
+var Device = require('react-native-device')
 
 var { GiftedForm, GiftedFormManager } = require('react-native-gifted-form')
 var validator = require('validator')
@@ -401,7 +402,8 @@ class SubCategory extends Component {
       desc: 'blast of ' + self.state.size + ' mms messages',
       platform: Platform.OS,
       transactionId: order.transactionId,
-      receipt: order.receipt
+      receipt: order.receipt,
+      user: Device.identifierForVendor,
     }, self.state)
 
     params.toNumber = self._sanitizeNumber(params.toNumber)

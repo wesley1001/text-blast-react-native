@@ -34,6 +34,7 @@
 		A8E523361C6E4B88B68E7442 /* libRNMail.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F3EEAFD741D4D60AABDC95B /* libRNMail.a */; };
 		A9747E72152740F0BA04C303 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15C5245FCBBA4B9A9ADE5A36 /* Foundation.ttf */; };
 		C1398960B4BB4DA6AC897801 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9E138B1AABA4E06915D37E1 /* MaterialIcons.ttf */; };
+		C25F649386FD4AB7825C95B5 /* libRNUserDefaultsIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44874DC28B6B41F984A253BB /* libRNUserDefaultsIOS.a */; };
 		C496569F5CFD459492A884BA /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93B3EAD7123B4A7DB6D8F86B /* libRNVectorIcons.a */; };
 		D233A517539C46129F520A22 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2777C17A85EB4CB7A750C1B6 /* FontAwesome.ttf */; };
 /* End PBXBuildFile section */
@@ -101,6 +102,20 @@
 			proxyType = 2;
 			remoteGlobalIDString = 83CBBA2E1A601D0E00E9B192;
 			remoteInfo = React;
+		};
+		3D7AA8A51C6DB463007717A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47E3EBB368FB44F3BBBF4E05 /* RNUserDefaultsIOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 559FCEEF1B06A72F003129B0;
+			remoteInfo = RNUserDefaultsIOS;
+		};
+		3D7AA8A71C6DB463007717A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47E3EBB368FB44F3BBBF4E05 /* RNUserDefaultsIOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 559FCEFA1B06A72F003129B0;
+			remoteInfo = RNUserDefaultsIOSTests;
 		};
 		3D83F9A51C60BE85003BE822 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -200,6 +215,8 @@
 		3A3C50C8CF464AB386930232 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		3D83F9E21C65BC10003BE822 /* ART.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ART.xcodeproj; path = "../node_modules/react-native/Libraries/ART/ART.xcodeproj"; sourceTree = "<group>"; };
 		3D83FA331C664231003BE822 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = splash.png; path = "../../../../Documents/Text Blast/resources/splash.png"; sourceTree = "<group>"; };
+		44874DC28B6B41F984A253BB /* libRNUserDefaultsIOS.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNUserDefaultsIOS.a; sourceTree = "<group>"; };
+		47E3EBB368FB44F3BBBF4E05 /* RNUserDefaultsIOS.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNUserDefaultsIOS.xcodeproj; path = "../node_modules/react-native-userdefaults-ios/RNUserDefaultsIOS.xcodeproj"; sourceTree = "<group>"; };
 		4878DB07A9A942638DABFCD8 /* RCTContacts.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTContacts.xcodeproj; path = "../node_modules/react-native-contacts/ios/RCTContacts.xcodeproj"; sourceTree = "<group>"; };
 		50BB793D193A42D6805BA602 /* RNSpinkit.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNSpinkit.xcodeproj; path = "../node_modules/react-native-spinkit/ios/RNSpinkit.xcodeproj"; sourceTree = "<group>"; };
 		5C35B10546A74F2D9305274B /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
@@ -244,6 +261,7 @@
 				48AAE4A7CD264BA8A5A2E2D7 /* libInAppUtils.a in Frameworks */,
 				6500C0E948194F8696D813C8 /* libRCTContacts.a in Frameworks */,
 				A8E523361C6E4B88B68E7442 /* libRNMail.a in Frameworks */,
+				C25F649386FD4AB7825C95B5 /* libRNUserDefaultsIOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +363,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		3D7AA8911C6DB463007717A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D7AA8A61C6DB463007717A3 /* libRNUserDefaultsIOS.a */,
+				3D7AA8A81C6DB463007717A3 /* RNUserDefaultsIOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		3D83F9981C60BE85003BE822 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -422,6 +449,7 @@
 				4878DB07A9A942638DABFCD8 /* RCTContacts.xcodeproj */,
 				50BB793D193A42D6805BA602 /* RNSpinkit.xcodeproj */,
 				8B447E443901455E85C67FA8 /* RNMail.xcodeproj */,
+				47E3EBB368FB44F3BBBF4E05 /* RNUserDefaultsIOS.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -602,6 +630,10 @@
 					ProjectRef = 50BB793D193A42D6805BA602 /* RNSpinkit.xcodeproj */;
 				},
 				{
+					ProductGroup = 3D7AA8911C6DB463007717A3 /* Products */;
+					ProjectRef = 47E3EBB368FB44F3BBBF4E05 /* RNUserDefaultsIOS.xcodeproj */;
+				},
+				{
 					ProductGroup = 3D83F9981C60BE85003BE822 /* Products */;
 					ProjectRef = 77BFBD7D2C084942B1384266 /* RNVectorIcons.xcodeproj */;
 				},
@@ -669,6 +701,20 @@
 			fileType = archive.ar;
 			path = libReact.a;
 			remoteRef = 146834031AC3E56700842450 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3D7AA8A61C6DB463007717A3 /* libRNUserDefaultsIOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNUserDefaultsIOS.a;
+			remoteRef = 3D7AA8A51C6DB463007717A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3D7AA8A81C6DB463007717A3 /* RNUserDefaultsIOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RNUserDefaultsIOSTests.xctest;
+			remoteRef = 3D7AA8A71C6DB463007717A3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		3D83F9A61C60BE85003BE822 /* libRNVectorIcons.a */ = {
@@ -851,6 +897,7 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/textblast.app/textblast";
@@ -871,6 +918,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -898,6 +946,7 @@
 					"$(SRCROOT)/../node_modules/react-native-contacts/ios/RCTContacts",
 					"$(SRCROOT)/../node_modules/react-native-spinkit/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-mail/RNMail",
+					"$(SRCROOT)/../node_modules/react-native-userdefaults-ios/RNUserDefaultsIOS",
 				);
 				INFOPLIST_FILE = textblast/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -925,6 +974,7 @@
 					"$(SRCROOT)/../node_modules/react-native-contacts/ios/RCTContacts",
 					"$(SRCROOT)/../node_modules/react-native-spinkit/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-mail/RNMail",
+					"$(SRCROOT)/../node_modules/react-native-userdefaults-ios/RNUserDefaultsIOS",
 				);
 				INFOPLIST_FILE = textblast/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -980,6 +1030,7 @@
 					"$(SRCROOT)/../node_modules/react-native-contacts/ios/RCTContacts",
 					"$(SRCROOT)/../node_modules/react-native-spinkit/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-mail/RNMail",
+					"$(SRCROOT)/../node_modules/react-native-userdefaults-ios/RNUserDefaultsIOS",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -1025,6 +1076,7 @@
 					"$(SRCROOT)/../node_modules/react-native-contacts/ios/RCTContacts",
 					"$(SRCROOT)/../node_modules/react-native-spinkit/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-mail/RNMail",
+					"$(SRCROOT)/../node_modules/react-native-userdefaults-ios/RNUserDefaultsIOS",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;

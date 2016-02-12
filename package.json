@@ -20,6 +20,7 @@
     "react-native-progress": "^2.2.0",
     "react-native-userdefaults-ios": "^0.1.3",
     "react-native-vector-icons": "^1.1.1",
-    "validator": "^4.7.0"
+    "validator": "^4.7.0",
+    "react-native-device": "GertjanReynaert/react-native-device#gr-improve-device-support"
   }
 }
