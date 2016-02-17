@@ -6,21 +6,46 @@
 var React = require('react-native')
 var {
   Component,
+  SegmentedControlIOS,
   StyleSheet,
+  View,
 } = React
 
+var SearchCategoryList = require('./search-category-list')
 var CategoryService = require('../services/category')
 var CategoryList = require('./category-list')
 var Category = require('./category')
 
 class Gallery extends Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      selectedIndex: 0
+    }
+  }
+
   render() {
     return (
-      <CategoryList
-        style={styles.container}
-        onCategorySelect={this._onCategorySelect.bind(this)}
-        reloadCategories={this._reloadCategories.bind(this)}>
-      </CategoryList>
+      <View style={styles.container}>
+        <SegmentedControlIOS
+          style={{ height: 30 }}
+          values={[ 'Categories', 'Search' ]}
+          selectedIndex={this.state.selectedIndex}
+          onChange={(event) => {
+            this.setState({ selectedIndex: event.nativeEvent.selectedSegmentIndex })
+          }} />
+
+        {this.state.selectedIndex === 0 ?
+          <CategoryList
+            style={styles.container}
+            onCategorySelect={this._onCategorySelect.bind(this)}
+            reloadCategories={this._reloadCategories.bind(this)}>
+          </CategoryList>
+          :
+          <SearchCategoryList />
+        }
+      </View>
     )
   }
 

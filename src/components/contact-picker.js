@@ -86,12 +86,14 @@ class ContactPicker extends Component {
 
     return (
       <View style={styles.container}>
-        {loader}
         <View style={styles.searchInputContainer}>
           <TextInput
             style={styles.searchInput}
             value={this.state.searchQuery}
             placeholder='Filter'
+            clearButtonMode='while-editing'
+            autoCorrect={false}
+            autoCapitalize='none'
             onChangeText={(searchQuery) => {
               let contacts = this._getFilteredContacts(searchQuery)
 
@@ -100,9 +102,10 @@ class ContactPicker extends Component {
                 searchQuery: searchQuery
               })
             }}
-            clearButtonMode='while-editing'
           />
         </View>
+
+        {loader}
       </View>
     )
   }

@@ -83,6 +83,11 @@ class CategoryList extends Component {
     }
   }
 
+  reload() {
+    this.setState({ loaded: false })
+    this._reloadCategories()
+  }
+
   _renderHeader() {
     if (this.state.loaded) {
       return <View />
@@ -135,6 +140,7 @@ class CategoryList extends Component {
     self.setState({ isRefreshing: true })
     return self.props.reloadCategories()
       .then(function (categories) {
+        console.log('categories', categories)
         self._categories = categories
 
         self.setState({

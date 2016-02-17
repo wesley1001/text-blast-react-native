@@ -188,7 +188,7 @@ class SubCategory extends Component {
               title='Select Recipient'
               onPress={() => {
                 this.props.navigator.push({
-                  title: 'Select Contact',
+                  title: 'Select Recipient',
                   component: ContactPicker,
                   props: {
                     onSelectContact: this._onSelectContact.bind(this),

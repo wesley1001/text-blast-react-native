@@ -18,6 +18,7 @@ var Drawer = require('react-native-drawer')
 var Icon = require('react-native-vector-icons/FontAwesome')
 
 var Gallery = require('./gallery')
+var SearchCategoryList = require('./search-category-list')
 var SideMenu = require('./side-menu')
 
 class App extends Component {

@@ -15,5 +15,11 @@ module.exports = {
     return fetch(SEAPIv2 + '/categories?' + queryString.stringify(params))
       .then(utils.checkResponseStatus)
       .then((response) => response.json())
+  },
+
+  search: (params) => {
+    return fetch(SEAPI + '/categories/search?' + queryString.stringify(params))
+      .then(utils.checkResponseStatus)
+      .then((response) => response.json())
   }
 }

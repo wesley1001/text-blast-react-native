@@ -4,16 +4,16 @@
 
 This project is a cross-platform mobile app allowing users to blast their friends with purchasable packs of MMS messages.
 
+<p align="center">
+  <img src="http://a5.mzstatic.com/us/r30/Purple69/v4/fb/c8/0f/fbc80f3b-38f1-42df-318a-beb8b5412c8b/screen322x572.jpeg"/>
+  <img src="http://a1.mzstatic.com/us/r30/Purple69/v4/d0/43/31/d0433147-9553-4cdd-9a43-2586b941dad1/screen322x572.jpeg"/>
+</p>
+
 ### Structure
 
 This is a react-native mobile client that talks to a nodejs [backend](https://github.com/SeshApp/text-blast).
 
 *There is an analogous [ionic mobile client](https://github.com/SeshApp/text-blast-ionic) for directly comparing Ionic and React Native on a simple, real-world app.*
-
-<p align="center">
-  <img src="http://a5.mzstatic.com/us/r30/Purple69/v4/fb/c8/0f/fbc80f3b-38f1-42df-318a-beb8b5412c8b/screen322x572.jpeg"/>
-  <img src="http://a1.mzstatic.com/us/r30/Purple69/v4/d0/43/31/d0433147-9553-4cdd-9a43-2586b941dad1/screen322x572.jpeg"/>
-</p>
 
 ### Todo
 
