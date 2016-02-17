@@ -416,7 +416,7 @@ class SubCategory extends Component {
 
     return OrderService.create(params)
       .then(() => {
-        Alert.alert('Success', 'Order placed successfully!')
+        Alert.alert('Success', 'Your order\'s been placed successfully! The recipient should start receiving messages shortly. You can check the status of your order at any time from the top menu.')
 
         self.setState({
           toNumber: "",
