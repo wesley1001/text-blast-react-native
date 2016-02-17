@@ -132,6 +132,7 @@ class ContactPicker extends Component {
     }
 
     if (searchQuery && searchQuery.length) {
+      searchQuery = searchQuery.toLowerCase()
       contacts = contacts.filter((contact) => contactMatchesQuery(contact, searchQuery))
     }
 
@@ -144,15 +145,15 @@ function getContactName (contact) {
 }
 
 function contactMatchesQuery (contact, query) {
-  if (contact.givenName && contact.givenName.indexOf(query) >= 0) {
+  if (contact.givenName && contact.givenName.toLowerCase().indexOf(query) >= 0) {
     return true
   }
 
-  if (contact.familyName && contact.familyName.indexOf(query) >= 0) {
+  if (contact.familyName && contact.familyName.toLowerCase().indexOf(query) >= 0) {
     return true
   }
 
-  if (getContactName(contact).indexOf(query) >= 0) {
+  if (getContactName(contact).toLowerCase().indexOf(query) >= 0) {
     return true
   }
 
