@@ -43,7 +43,7 @@ class Gallery extends Component {
             reloadCategories={this._reloadCategories.bind(this)}>
           </CategoryList>
           :
-          <SearchCategoryList />
+          <SearchCategoryList navigator={this.props.navigator} route={this.props.route} />
         }
       </View>
     )
